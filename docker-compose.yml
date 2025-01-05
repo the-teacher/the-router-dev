@@ -1,0 +1,12 @@
+name: the_router_dev
+
+services:
+  app:
+    image: node:22
+    command: sleep infinity
+    working_dir: /app
+    volumes:
+      - ./the-router:/app/the-router
+      - ./router_test_app:/app/router_test_app
+    ports:
+      - 3000:3000
