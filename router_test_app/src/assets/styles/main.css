@@ -1,0 +1,117 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+  padding: 10px;
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.method {
+  display: inline-block;
+  min-width: 60px;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.get {
+  background: #e7f0ff;
+  color: #0066cc;
+}
+.post {
+  background: #e7ffe7;
+  color: #006600;
+}
+.put {
+  background: #fff3e7;
+  color: #cc6600;
+}
+.delete {
+  background: #ffe7e7;
+  color: #cc0000;
+}
+
+.route-section {
+  margin: 2rem 0;
+  padding: 1rem;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.route-section h2 {
+  margin: 0 0 1rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #eee;
+  color: #444;
+  font-size: 1.2rem;
+}
+
+.route-section ul {
+  margin: 0;
+}
+
+.route-section li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.route-section li > span,
+.route-section li > a,
+.route-section li > code {
+  margin: 5px 0;
+}
+
+.route-section code {
+  margin-left: auto;
+  padding: 0.2rem 0.5rem;
+  background: #f8f8f8;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  font-family: monospace;
+  color: #666;
+}
+
+.curl-example {
+  flex-basis: 100%;
+  font-size: 12px;
+  color: #666;
+  background: #f8f8f8;
+  border-left: 3px solid #ddd;
+  margin: 10px 0 5px 0;
+  padding: 8px 12px;
+  font-family: monospace;
+  white-space: pre-wrap;
+  word-break: break-all;
+}

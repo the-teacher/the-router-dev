@@ -3,6 +3,7 @@ import { getRouter } from "the-router";
 import "./routes";
 
 const app = express();
+app.use(express.json());
 app.use(getRouter());
 
 app.listen(3000, () => {
