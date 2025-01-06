@@ -1,4 +1,4 @@
-import { root, get, post, scope, resources } from "the_router";
+import { root, get, post, scope, resources } from "@the-teacher/the-router";
 
 import { checkAuth, isAdmin } from "../middleware/auth";
 import { validatePost } from "../middleware/validation";

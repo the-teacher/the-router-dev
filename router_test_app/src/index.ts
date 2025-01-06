@@ -1,5 +1,5 @@
 import express from "express";
-import { getRouter } from "the_router";
+import { getRouter } from "@the-teacher/the-router";
 import "./routes";
 
 const app = express();

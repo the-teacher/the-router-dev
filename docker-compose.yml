@@ -6,7 +6,7 @@ services:
     command: sleep infinity
     working_dir: /app
     volumes:
-      - ./the_router:/app/the_router
+      - ./the-router:/app/the-router
       - ./router_test_app:/app/router_test_app
     ports:
       - 3000:3000

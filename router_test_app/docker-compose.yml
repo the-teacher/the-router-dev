@@ -1,4 +1,4 @@
-name: the_router_test_app
+name: the-router_test_app
 
 services:
   app:

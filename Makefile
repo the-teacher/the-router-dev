@@ -35,4 +35,4 @@ app_start:
 	docker-compose exec --workdir /app/router_test_app app npm run dev
 
 setup:
-	git clone https://github.com/the-teacher/the_router.git
+	git clone https://github.com/the-teacher/the-router.git
