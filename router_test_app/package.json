@@ -13,7 +13,7 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "the-router": "file:../the-router",
+    "the_router": "file:../the_router",
     "typescript": "^5.4.2",
     "ts-node-dev": "^2.0.0",
     "@types/express": "^4.17.21",

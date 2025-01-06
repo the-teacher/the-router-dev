@@ -1,6 +1,6 @@
 init:
 	npm init -y
-	npm install ../the-router --save-dev
+	npm install ../the_router --save-dev
 
 up:
 	docker compose up -d
