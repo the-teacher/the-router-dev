@@ -1,48 +1,8 @@
 # Router Test App
 
-Demo application for `@the-teacher/the-router`.
+## Installation
 
-## Installation and Launch
-
-### Dependencies
-
-- Node.js >= 14
-- npm or yarn
-- TypeScript
-
-### Installation
-
-```bash
-# Clone repository
-git clone <repository-url>
-cd router_test_app
-
-# Install dependencies
-npm install
-# or
-yarn install
-```
-
-### Launch
-
-```bash
-# Development mode with auto-reload
-npm run dev
-# or
-yarn dev
-
-# Build project
-npm run build
-# or
-yarn build
-
-# Run built project
-npm start
-# or
-yarn start
-```
-
-The application will be available at: `http://localhost:3000`
+`yarn add @the-teacher/the-router`.
 
 ## Routing
 
@@ -383,24 +343,3 @@ app.listen(PORT, () => {
 
 - `setActionsPath(path)` - Set custom path for actions (default: "src/actions")
 - `getRouter()` - Get router instance
-
-### TypeScript Configuration
-
-```json
-{
-  "compilerOptions": {
-    "target": "es2016",
-    "module": "commonjs",
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "strict": true,
-    "skipLibCheck": true,
-    "outDir": "./dist",
-    "resolveJsonModule": true
-  },
-  "include": ["src/**/*"],
-  "ts-node": {
-    "files": true
-  }
-}
-```
