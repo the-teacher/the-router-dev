@@ -327,3 +327,80 @@ module.exports = {
 5. Test response status and data structure
 6. Verify middleware and protected routes functionality
 7. Monitor code coverage
+
+## Router Initialization
+
+### Basic Setup
+
+```typescript
+// src/index.ts
+import express from "express";
+import { getRouter } from "@the-teacher/the-router";
+import "./routes"; // Import routes definition
+
+const app = express();
+
+// Add JSON body parser
+app.use(express.json());
+
+// Initialize and connect router
+app.use(getRouter());
+
+// Start server
+app.listen(3000, () => {
+  console.log("Server is running on port 3000");
+});
+```
+
+### Advanced Setup
+
+```typescript
+// src/index.ts
+import express from "express";
+import { getRouter, setActionsPath } from "@the-teacher/the-router";
+import path from "path";
+import "./routes";
+
+const app = express();
+
+// Middleware
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+// Custom actions path (optional)
+setActionsPath(path.join(__dirname, "custom/actions/path"));
+
+app.use(getRouter());
+
+// Start server
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
+```
+
+### Configuration Options
+
+- `setActionsPath(path)` - Set custom path for actions (default: "src/actions")
+- `getRouter()` - Get router instance
+
+### TypeScript Configuration
+
+```json
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "outDir": "./dist",
+    "resolveJsonModule": true
+  },
+  "include": ["src/**/*"],
+  "ts-node": {
+    "files": true
+  }
+}
+```
